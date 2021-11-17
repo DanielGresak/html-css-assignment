@@ -1,0 +1,97 @@
+<!-- Found how to link to another folder here -->
+<!--  https://stackoverflow.com/questions/43947600/how-do-i-link-a-css-stylesheet-from-another-folder-below-in-the-directory -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <!-- Found favicon at https://www.flaticon.com/ -->
+  <link rel="shortcut icon" type="image/jpg" href="../images/favicon.png" />
+  <title>Daniel Gresak - Skydiving</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../images/sitflying.jpg" alt="Dan in Spain">
+    <h1 class="header-text">Daniel Gresak</h1>
+    <h2 class="header-text">Skydiving</h2>
+
+    <ul class="navbar">
+      <li class="navbar"><a href="index.html">Home</a></li>
+      <li class="navbar"><a href="travel.html">Travel</a></li>
+      <li class="navbar"><a href="disciplines.html">Disciplines</a></li>
+      <li class="navbar"><a href="tunnel.html">Tunnel Flying</a></li>
+      <li class="navbar"><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </header>
+  <section class="body">
+    <h1 class="body-text">Who am I?</h1>
+    <p class="body-text">Welcome to my website, My name is Daniel and I thought I would make a project
+      about my hobby of skydiving. I plan to outline some interesting things about the
+      sport including: </p>
+
+    <details>
+      <summary class="body-text">What I will cover</summary>
+      <ul>
+        <!-- I knew that using HTML to change the style might be considered bad practice so
+      I found this to use span as a way to use css to bold one particular word
+       https://stackoverflow.com/questions/9058425/how-to-bold-words-within-a-paragraph-in-html-css-->
+        <li class="body-text"><span class="bold">Travel</span> - Skydiving in many beautiful locations around the world.</li>
+        <li class="body-text"><span class="bold">Disciplines</span> - What makes skydiving a sport rather than just an addrenaline hit.</li>
+        <li class="body-text"><span class="bold">Tunnel Flying</span> - The way we train for the sky in modern times.</li>
+        <li class="body-text"><span class="bold">Gallery</span> - The beauty shared. </li>
+      </ul>
+    </details>
+    <!-- https://www.w3schools.com/tags/tag_details.asp -->
+    <h1 class="body-text">My Experience</h1>
+    <!--Found how to embed video here - https://www.section.io/engineering-education/embedding-a-video-into-a-webpage-using-html-and-css/ -->
+    <iframe class="img-right" width="560" height="315" src="https://www.youtube.com/embed/lm8wxgr0WaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+    <p class="body-text">I have been skydiving since 2012 and in this time, completed around 600 jumps.
+      This adventure has brought me to 5 different countries where I have jumped, trained and worked.
+      I worked as a parachute packer at a busy dropzone in Australia.
+      I also visited Russia where I trained in a wind tunnel. </p>
+
+    <p class="body-text">My local dropzone is in county Ofally where I have done the majority of my jumps.
+      The atmosphere there is great and they have the best facilities in Ireland. </p>
+
+    <p class="body-text">One of the limiting factors of skydiving in Ireland is weather.
+      To jump we need winds of lower than usually 20mph and no rain/thick clouds. Despite this Ireland is an
+      amazing place to <a id="external-link" href="https://skydive.ie/">skydive.</a></p>
+    <p class="body-text">To the right you will see a compilation I made including some of my first 500 jumps. </p>
+
+    <div class="clear">
+      <h1 class="body-text">Contact Me</h1>
+      <p class="body-text">Feel free to contact me if you have any queries regarding my site or experience. Below is a button to email me, included with a link to my GitHub and LinkedIn profiles. </p>
+
+      <!-- https://www.tutorialspoint.com/html/html_email_links.htm-->
+      <ul class="contactme">
+        <li>
+          <a href="https://www.linkedin.com/in/daniel-gresak-a0255264"><img class="companylogo" src="../images/linkedin.png" alt="LinkedIn Logo"></a>
+          <p class="body-text">Check out my LinkedIn for previous work experience and up to date employement information!</p>
+        </li>
+        <li>
+          <a class="body-text button" href="mailto:daniel.gresak@ucdconnect.ie">Email Me!</a>
+          <p class="body-text">Email me if you have any questions regarding this website or skydiving! </p>
+        </li>
+        <li>
+          <a href="https://github.com/DanielGresak"><img class="companylogo" src="../images/github.png" alt="LinkedIn Logo"></a>
+          <p class="body-text">Check out my github for my previous or current projects!</p>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <p class="footer">Assignment done as part of UCD Web Developement module.</p>
+    <p class="footer">© Daniel Gresak 2021</p>
+  </footer>
+
+</body>
+
+</html>

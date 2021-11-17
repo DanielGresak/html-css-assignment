@@ -1,0 +1,323 @@
+/* Found the colour palet at https://coolors.co/fbfbf2-e5e6e4-cfd2cd-a6a2a2-847577  */
+/* Used W3 schools to help with logo class properties  */
+/* Position Elements were researched mainly using the Mozilla Doc's - https://developer.mozilla.org/en-US/docs/Web/CSS/position#values  */
+
+body {
+  background-color: #FBFBF2;
+  font-family: 'Calibri', sans-serif;
+}
+
+/* PICTURE AND TITLE CSS STYLING */
+
+.logo {
+  max-width: 220px;
+  height: auto;
+  border-radius: 25px 0 0 0;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+
+header {
+  background-color: #CFD2CD;
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  top: 0;
+}
+
+.header-text {
+  position: absolute;
+  color: #A6A2A2;
+  display: inline;
+  padding-left: 20px;
+
+}
+
+h2.header-text {
+  font-size: 50px;
+  left: 43%;
+  top: -5%;
+  text-decoration: underline;
+  color: #847577;
+  padding-top: 10px;
+}
+
+/* NAVBAR CSS STYLING */
+
+/* I looked through w3 Schools to make the navbar and seperately for the hover https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+/* I found how to space the navbar options evenly here - https://stackoverflow.com/questions/51795653/evenly-distribute-text-within-a-div */
+
+.navbar {
+  background-color: #847577;
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  justify-content:center;
+}
+
+ul.navbar {
+  margin: 0 auto 0 auto;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li.navbar a {
+  color: #FBFBF2;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+li.navbar a:hover {
+  color: #847577;
+  background-color:#FBFBF2;
+}
+
+/* BODY CSS STYLING */
+
+.body {
+  position: relative;
+  width: 90%;
+  margin: 10px auto 100px auto;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 30px;
+  width: 30%;
+  transition-duration: .5s;
+}
+
+summary:hover {
+    background-color: #CFD2CD;
+}
+
+h1.body-text {
+  font-size: 40px;
+}
+
+th.body-text {
+  font-size: 30px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+p.body-text, li.body-text, td.body-text {
+  font-size: 20px;
+}
+
+.body-text {
+  color: #847577;
+}
+
+.centered {
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* FOOTER CSS STYLING */
+
+footer {
+  font-size: 13px;
+  position: relative;
+  bottom: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  padding: 15px;
+  background-color: #A6A2A2;
+}
+
+.footer {
+  margin-top: 10px;
+  text-align: center;
+  color: #FBFBF2;
+}
+
+/* IMAGES CSS STYLING */
+
+/* Float property found here https://www.w3schools.com/css/css_float.asp/ */
+
+.body-image {
+  position: relative;
+  top: 30px;
+  max-width: 400px;
+  border-radius: 25px;
+  margin-bottom: 35px;
+}
+
+.img-left {
+  float: left;
+  margin-right: 30px;
+
+}
+
+.img-right {
+  float: right;
+  margin-left: 30px;
+}
+
+.section-padding {
+  padding-top: 50px;
+}
+
+#tunnel-img {
+  border-radius: 25px;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.tunnel-vid {
+  display: block;
+  margin: 50px auto 25px auto;
+}
+
+iframe {
+  border-radius: 25px;
+  margin: 20px 0 20px 20px;
+}
+
+/* HYPERLINK CSS STYLING */
+
+#external-link {
+  text-decoration: none;
+  color: #0645AD;
+}
+
+#external-link:hover {
+  color: #847577;
+}
+
+/* BUTTON AND CONTACT LINKS CSS STYLE */
+
+.clear{
+  clear: both;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: .3s;
+  background-color: #847577;
+  color: #FBFBF2;
+  border: none;
+  padding: 14px 32px;
+  font-size: 25px;
+  border-radius: 25px;
+  margin-bottom: 35px;
+
+}
+
+.button:hover {
+  background-color: #A6A2A2;
+  transform: scale(1.5);
+
+}
+
+.companylogo{
+  width: 90px;
+  transition-duration: .3s;
+}
+
+.companylogo:hover {
+  transform: scale(1.5);
+  opacity: 60%;
+}
+
+.contactme {
+  padding: 28px 40px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contactme li {
+  width: 150px;
+  text-align: center;
+  flex: auto;
+  padding: 0 30px;
+}
+
+/* GALLERY CSS STYLING*/
+
+/* Found how to zoom on hover here https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+.gallery-image {
+  transition: .5s;
+}
+
+.gallery-image:hover {
+  transform: scale(1.8);
+  /* To make sure it displays over the other images on smaller screens */
+  z-index: 2;
+}
+
+/* Found how to make a grid usinbg CSS using W3schools - https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+}
+
+.column {
+  flex: 5%;
+  max-width: 33%;
+}
+
+figcaption.body-text {
+  padding-left: 20px;
+}
+
+/* TABLE CSS STYLING */
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  text-align: center;
+  padding: 0 40px;
+}
+
+/* MAKING THE WEBSITE RESPONSIVE TO SCREEN SIZE */
+
+/* I used chrome developer tools to test the sizes for different devices. */
+/* Found how to make website react to screen size here https://www.w3schools.com/cssref/css3_pr_mediaquery.asp*/
+
+@media only screen and (max-width: 1400px){
+  .body-image {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 1025px){
+  .body-image {
+    max-width: 200px;
+  }
+  #tunnel-img {
+    max-width: 600px;
+  }
+  li.navbar a {
+    padding: 14px 30px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #tunnel-img {
+    max-width: 300px;
+  }
+  li.navbar a {
+    padding: 14px 15px;
+  }
+  .button {
+    margin: 0 50px;
+  }
+}
